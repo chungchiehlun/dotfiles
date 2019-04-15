@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 " Reference
 " https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
 
