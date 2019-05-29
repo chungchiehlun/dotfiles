@@ -81,5 +81,10 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap jj <Esc>
 nnoremap <Space> i<Space><Esc>w
+
+" https://vim.fandom.com/wiki/Accessing_the_system_clipboard
+inoremap <C-v> <ESC>"+pa
+vnoremap <C-c> "+y
+vnoremap <C-d> "+d
+
