@@ -1,7 +1,7 @@
 ## Sync all necessary dotfiles
 
 ```bash
-$ rsync -avz --exclude '.git' --exclude '*.md' ./ ~
+$ source bootstrap.sh
 ```
 
 ## Programming Language
