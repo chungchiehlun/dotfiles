@@ -10,3 +10,5 @@ alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 alias gg="git log --all --decorate --oneline --graph"
 alias g="git"
 
+# Disk Usage
+
