@@ -27,7 +27,7 @@ set history=500
 
 " Enable filetype plugins
 filetype plugin on
-filetype indent on
+filetype indent off
 
 " Set to auto read when a file is changed from the outside
 set autoread
