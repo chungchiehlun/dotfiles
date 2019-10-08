@@ -7,8 +7,15 @@ alias ..="cd .."
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Git
-alias gg="git log --all --decorate --oneline --graph"
 alias g="git"
+alias gg="git log --all --decorate --oneline --graph"
+alias gac="git add . && git commit -a -m "
 
-# Disk Usage
+# Install node Packages
+alias nis="npm install --save "
+# Search Through Terminal History
+alias h='history'
+alias hs='history | grep'
+# Show my ip address
+alias myip="curl http://ipecho.net/plain; echo"
 
