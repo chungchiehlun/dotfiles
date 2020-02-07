@@ -4,6 +4,11 @@ set ttimeoutlen=100
 
 autocmd vimenter * NERDTree
 
+augroup SyntaxSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+augroup END
+
 " lightline.vim
 set laststatus=2
 set noshowmode

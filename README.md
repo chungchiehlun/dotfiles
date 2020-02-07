@@ -28,7 +28,7 @@ $ source bootstrap.sh
 ## MUST HAVE
 - [pyenv](https://github.com/pyenv/pyenv)
 - [nvm](https://github.com/creationix/nvm)
-- [Google Cloud SDK](https://cloud.google.com/sdk/docs/#install_the_latest_cloud_tools_version_cloudsdk_current_version)I
+- [Google Cloud SDK](https://cloud.google.com/sdk/docs/#install_the_latest_cloud_tools_version_cloudsdk_current_version)
 
 ## VIM PLUGINS
 - [pathogen](https://github.com/tpope/vim-pathogen)
@@ -38,4 +38,6 @@ $ source bootstrap.sh
 - [commentary](https://github.com/tpope/vim-commentary)
 - [lightline](https://github.com/itchyny/lightline.vim)
 - [jellybeans](https://github.com/nanotech/jellybeans.vim)
+- [vim-javascript](https://github.com/pangloss/vim-javascript)
+- [typescript-vim](https://github.com/leafgarland/typescript-vim)
 
