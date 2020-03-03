@@ -8,6 +8,7 @@ alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Git
 alias g="git"
+alias gs="git status"
 alias gg="git log --all --decorate --oneline --graph"
 alias gac="git add . && git commit -a -m "
 

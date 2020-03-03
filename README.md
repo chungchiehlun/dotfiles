@@ -40,4 +40,5 @@ $ source bootstrap.sh
 - [jellybeans](https://github.com/nanotech/jellybeans.vim)
 - [vim-javascript](https://github.com/pangloss/vim-javascript)
 - [typescript-vim](https://github.com/leafgarland/typescript-vim)
+- [vim-graphql](https://github.com/jparise/vim-graphql)
 

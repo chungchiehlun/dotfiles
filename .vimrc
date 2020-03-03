@@ -4,6 +4,7 @@ set ttimeoutlen=100
 
 autocmd vimenter * NERDTree
 
+" https://github.com/leafgarland/typescript-vim/issues/158
 augroup SyntaxSettings
   autocmd!
   autocmd BufNewFile,BufRead *.tsx set filetype=typescript
@@ -58,6 +59,12 @@ set foldlevel=99
 " Enable syntax highlighting
 syntax on 
 
+" https://vi.stackexchange.com/a/13041
+" ---- Minimal configuration:
+set smartindent   " Do smart autoindenting when starting a new line
+set shiftwidth=4  " Set number of spaces per auto indentation
+set expandtab     " When using <Tab>, put spaces instead of a <tab> character
+
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -86,7 +93,8 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <Space> i<Space><Esc>w
+nnoremap <C-n> :NERDTreeFocus<CR>
+" nnoremap <Space> i<Space><Esc>w
 
 " https://vim.fandom.com/wiki/Accessing_the_system_clipboard
 inoremap <C-v> <ESC>"+pa
