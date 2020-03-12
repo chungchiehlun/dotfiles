@@ -4,12 +4,6 @@ set ttimeoutlen=100
 
 autocmd vimenter * NERDTree
 
-" https://github.com/leafgarland/typescript-vim/issues/158
-augroup SyntaxSettings
-  autocmd!
-  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
-augroup END
-
 " lightline.vim
 set laststatus=2
 set noshowmode
@@ -59,12 +53,6 @@ set foldlevel=99
 " Enable syntax highlighting
 syntax on 
 
-" https://vi.stackexchange.com/a/13041
-" ---- Minimal configuration:
-set smartindent   " Do smart autoindenting when starting a new line
-set shiftwidth=4  " Set number of spaces per auto indentation
-set expandtab     " When using <Tab>, put spaces instead of a <tab> character
-
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -74,10 +62,10 @@ set encoding=utf8
 " Use spaces instead of tabs
 set expandtab
 
-" Be smart when using tabs ;)
+" Be smart when using tabs
 set smarttab
 
-" 1 tab == 4 spaces
+" 1 tab == 2 spaces
 set shiftwidth=2
 set tabstop=2
 
@@ -89,6 +77,13 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
+" https://github.com/leafgarland/typescript-vim/issues/158
+augroup SyntaxSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+augroup END
+
+autocmd FileType python setlocal shiftwidth=2 softtabstop=2 expandtab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Key bindings
