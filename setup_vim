@@ -1,0 +1,27 @@
+#!/bin/zsh
+DIR=$(pwd)
+
+# vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# vim-pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+git clone https://tpope.io/vim/commentary.git ~/.vim/bundle/commentary
+git clone https://github.com/itchyny/lightline.vim ~/.vim/bundle/lightline.vim
+git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
+git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript-vim
+
+# jellybeans.vim
+mkdir -p ~/.vim/colors && cd ~/.vim/colors
+curl -O https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
+cd "$DIR"
+
+# vimrc
+cd vimrc
+cat index.vim basic.vim filetypes.vim plugins_config.vim > ~/.vimrc
+cd "$DIR"
+
+
