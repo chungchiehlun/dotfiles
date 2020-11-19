@@ -1,5 +1,0 @@
-#!/bin/zsh
-cp -v .zprofile .aliases .functions ~
-
-source ~/.zprofile
-
