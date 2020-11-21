@@ -20,6 +20,7 @@ git clone https://github.com/chungchiehlun/dotfiles.git
 1. Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation)
 2. Run `make setup-zsh` 
 3. Run `make setup-vim`
+4. Reload `.vimrc` and `:PlugInstall` to install plugins.
 
 Notes:
 
