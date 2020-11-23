@@ -16,8 +16,6 @@ setup-vim:
 		https://tpo.pe/pathogen.vim
 	$(call gitclone,~/.vim/bundle/commentary,https://tpope.io/vim/commentary.git)
 	$(call gitclone,~/.vim/bundle/lightline.vim,https://github.com/itchyny/lightline.vim)
-	$(call gitclone,~/.vim/bundle/vim-javascript,https://github.com/pangloss/vim-javascript.git) 
-	$(call gitclone,~/.vim/bundle/typescript-vim,https://github.com/leafgarland/typescript-vim.git) 
 	@curl -LSso ~/.vim/autoload/plug.vim --create-dirs \
 		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	@curl -LSso ~/.vim/colors/jellybeans.vim --create-dirs \
