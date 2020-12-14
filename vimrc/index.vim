@@ -11,6 +11,7 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " pathogen
